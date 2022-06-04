@@ -7,3 +7,8 @@ const twoSum = (nums, target) => {
     }
   }
 };
+
+const number = [2, 7, 11, 15];
+const target = 18;
+
+twoSum(number, target);
