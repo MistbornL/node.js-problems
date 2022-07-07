@@ -1,6 +1,6 @@
 var i = 1;
-const nums = [1, 2, 0];
 
+const nums = [1, 2, 0];
 nums = nums.sort(function (a, b) {
   return a - b;
 });
