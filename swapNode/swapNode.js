@@ -1,16 +1,16 @@
-function swapPairs(head) {
-  const dummy = new Array(...head);
-  for (let i = 0; i < head.length; i += 2) {
-    if (head.length === 1) {
-      return head;
+function swapPairs(node) {
+  const dummy = new Array(...node);
+  for (let i = 0; i < node.length; i += 2) {
+    if (node.length === 1) {
+      return node;
     }
-    head[i] = head[i + 1];
-    head[i + 1] = dummy[i];
-    if (head[i] === undefined) {
-      head.splice(i, 1);
+    node[i] = node[i + 1];
+    node[i + 1] = dummy[i];
+    if (node[i] === undefined) {
+      node.splice(i, 1);
     }
   }
-  return head;
+  return node;
 }
 
 var numbers = [];
