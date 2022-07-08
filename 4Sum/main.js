@@ -9,3 +9,4 @@ function sum4(number, target) {
 }
 
 sum4([2, 2, 2, 2, 2], 8);
+sum4([1, 0, -1, 0, -2, 2], 0);
