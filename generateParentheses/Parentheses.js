@@ -22,7 +22,3 @@ const parentheses = (n) => {
   generate(n, n);
   return solution;
 };
-console.log(parentheses(3));
-
-const arr = ["a", "b"];
-console.log(arr.join(""));
