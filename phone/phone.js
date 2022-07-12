@@ -14,14 +14,12 @@ function phone(dial) {
   var answer = [];
 
   dial = dial.toString();
-  if (map[dial] === 1) {
-    console.log("wrong number");
-  }
-  if (dial.length > 4 || dial.length < 1) {
-    console.log("");
-  }
-  if (dial.length === 1) {
-    console.log(map[dial]);
+  if (dial === 1) {
+    return "wrong number";
+  } else if (dial.length > 4 || dial.length < 1) {
+    return "wrong length";
+  } else if (dial.length === 1) {
+    answer.push(...map[dial]);
   } else {
     for (let i = 0; i < dial.length; i++) {
       digits.push(...map[dial[i]]);
@@ -36,6 +34,11 @@ function phone(dial) {
       }
     }
   }
+  return answer;
 }
 
+console.log(phone(2));
+console.log(phone(23));
+console.log(phone(234));
 console.log(phone(23456));
+console.log(phone(1));

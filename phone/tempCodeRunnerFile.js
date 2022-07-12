@@ -1,1 +1,1 @@
-digits
+map[dial]
