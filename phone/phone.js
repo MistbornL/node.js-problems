@@ -14,7 +14,7 @@ function phone(dial) {
   var answer = [];
 
   dial = dial.toString();
-  if (dial === 1) {
+  if (dial === "1") {
     return "wrong number";
   } else if (dial.length > 4 || dial.length < 1) {
     return "wrong length";
