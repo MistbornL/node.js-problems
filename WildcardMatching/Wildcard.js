@@ -8,11 +8,11 @@ function wildcard(s, p) {
   }
 
   for (let i = 0; i < sArray.length; i++) {
-    if (sArray[i] === pArray[i]) {
-      return true;
-    } else if (pArray[i] === "?") {
-      return true;
-    } else {
+    if (sArray[i] !== pArray[i] && pArray[i] !== "?") {
+      return false;
+    } else if (pArray[i] === "?" && pArray) {
+      continue;
+    } else if (pArray.length !== sArray.length) {
       return false;
     }
   }
@@ -24,4 +24,4 @@ function wildcard(s, p) {
   // }
 }
 
-console.log(wildcard("asd", "?cd"));
+console.log(wildcard("ddd", "??d"));
